@@ -1,0 +1,93 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="zxx">
+<head>
+    <title>Combine Agriculture Category Bootstrap Responsive Website Template | Home :: W3layouts</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Combine Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="~/Content/HomeSripts/css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="~/Content/HomeSripts/css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <link rel="stylesheet" href="~/Content/HomeSripts/css/font-awesome.css">
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- //Custom-Files -->
+    <!-- Web-Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+    <!-- //Web-Fonts -->
+</head>
+<body>
+    <div class="main-top py-1">
+        <!-- header -->
+        <header>
+            <div class="container-fluid px-lg-4">
+                <nav class="py-4">
+                    @Html.ActionLink("Student Identification", "Index", "Home", new { area = "" }, new { @class = "logo", id = "logo", size = "30" })
+
+
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop">
+                    <ul class="menu mt-md-3">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        @*<li>@Html.ActionLink("MyServices", "MyServices", "Home")</li>*@
+
+                    </ul>
+                    @Html.Partial("_LoginPartial", new { @class = "logo", id = "logo" })
+                </nav>
+            </div>
+        </header>
+        <!-- //header -->
+        <!-- //header -->
+        <!-- banner -->
+        <div class="main-w3pvt">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="style-banner">
+                        <h1 class="text-white">Welcome to  </h1>
+                        <p class="mt-5 text-white"> Esut Engineering Student Identification Portal </p>\
+                        @Html.ActionLink("Learn More", "Abouts", "Home", new { area = "" }, new { @class = "btn button-style mt-sm-5 mt-4 scroll"})
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //banner -->
+    </div>
+    @RenderBody()
+    <!-- footer -->
+    <div class="cpy-right text-center py-5">
+        <ul class="social_section_1info pt-lg-4 mb-lg-4">
+            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+        </ul>
+        <p>
+            © 2019 Rikudou En Sof. All rights reserved | Design by
+            <a href="http://w3layouts.com"> W3layouts.</a>
+        </p>
+    </div>
+    <!-- //footer -->
+
+</body>
+</html>
